@@ -34,4 +34,4 @@ In this folder are available Datasets and Code that are used by the Team. It is 
  - <gil@dei.uminho.pt>
 
 
-[OmniVision Documentation](https://github.com/josecomartins/OmniVision/blob/main/Player/OmniVision_pkg/OmniVisionDoc/pkg/player/OmniVision_pkg/index.html)
+[OmniVision Documentation](https://htmlpreview.github.io/https://github.com/josecomartins/OmniVision/blob/main/Player/OmniVision_pkg/OmniVisionDoc/pkg/player/OmniVision_pkg/index.html)
