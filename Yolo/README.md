@@ -1,4 +1,4 @@
-![LAR](https://github.com/MSL-LAR-MinhoTeam/2TDP/blob/main/Images/git_msl_YOLO.png)
+![LAR](https://github.com/josecomartins/OmniVision/blob/main/Yolo/LAR_logo_dark_v2.1_BANNER.png)
 # LAR@MSL YOLOv8 Instance Segmentation
 ## ⚠️ Dataset in development.
 
