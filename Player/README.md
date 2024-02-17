@@ -12,7 +12,6 @@ Communication is used like a local database. Communicates with ESP32 (low level)
 
 ## OmniVision_pkg
 Use only the omnidirectional camera to self-localization and objects detection.
-⚠️ Object detection only with basic functions, replacing with YOLOv8.
 
 ## Freenect
 Library to adquire images from Kinect.
