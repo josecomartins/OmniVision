@@ -10,3 +10,4 @@ This algorithm will be able to detect all elements in the field: goal posts, bal
 ⚠️Until now we just develop a simple threshold method, to other member of the team can develope Skill and Strategy.
 We are integrating Instance Segmentation using YOLOv8 in our code. Results soon...
 
+# Made by José Martins
