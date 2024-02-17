@@ -1,5 +1,5 @@
 ![LAR](https://github.com/MSL-LAR-MinhoTeam/2TDP/blob/main/Images/git_msl_player.png)
-# LAR@MSL Player Code 
+# LAR@MSL Player Code (OmniVision)
 
 ## Why Golang?
 Main reasons:
