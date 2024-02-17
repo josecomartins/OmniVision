@@ -9,8 +9,6 @@ import freenect
 import frame_convert
 import cv2 as cv
 import matplotlib.pyplot as plt
-from ultralytics import YOLO
-from ultralytics.yolo.v8.detect.predict import DetectionPredictor
 import cv2
 import time
 import os
