@@ -11,13 +11,9 @@
 
 ## Our robot: 
 ![Robot](https://github.com/MSL-LAR-MinhoTeam/2TDP/blob/main/Images/photo_2023-02-28_14-06-29.jpg)
-# Base Station and Strategy:
-The Base Station and Strategy was developed in Python 3.11 and is one of the most important tools for the robots to be able to play. It handles the communications between the Base Station and the robots and even from the RefBox using WebSockets. The Strategy works with the inputs from the robots, calculates the group of skills for that game state, and gives that information back to the robots.
 
-# Calibration Tools:
-This folder contains Calibration tools to simplify the calibration of cameras and their alignment. It was made in Python and saves a lot of time when the robot is disassembled and needs to be calibrated.
-
-# Hardware and 3D CADS
+# Hardware
+![Robot](https://github.com/josecomartins/OmniVision/blob/main/Hardware.pdf)
 Here are available the 3D CAD files from the robot, which is made by either aluminium or plastic PLA. There are still hardware being developed and some of them are from previous team generations, but the ones made this year are available here.
 
 # Player
