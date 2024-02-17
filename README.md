@@ -11,14 +11,6 @@ This algorithm will be able to detect all elements in the field: goal posts, bal
 We are integrating Instance Segmentation using YOLOv8 in our code. Results soon...
 
 
-====Run Calibration ====
-make calib
 
-=====Run Server ==== Just once, if server dont interrupted.
-make server
 
-====Run Go ====
-make debug
-
-====Run All ====
-make start
+[GitHub Pages](https://htmlpreview.github.io/?https://github.com/josecomartins/OmniVision/blob/main/OmniVisionDoc/pkg/player/OmniVision_pkg/index.html#/bored)
