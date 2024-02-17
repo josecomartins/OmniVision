@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#375EAB">
+
+  <title>OmniVision_pkg - Go Documentation Server</title>
+
+<link type="text/css" rel="stylesheet" href="../../../lib/godoc/style.css">
+
+<script>window.initFuncs = [];</script>
+<script src="../../../lib/godoc/jquery.js" defer></script>
+
+
+
+<script>var goVersion = "go1.18.1";</script>
+<script src="../../../lib/godoc/godocs.js" defer></script>
+</head>
+<body>
+
+<div id='lowframe' style="position: fixed; bottom: 0; left: 0; height: 0; width: 100%; border-top: thin solid grey; background-color: white; overflow: auto;">
+...
+</div><!-- #lowframe -->
+
+<div id="topbar" class="wide"><div class="container">
+<div class="top-heading" id="heading-wide"><a href="../../index.html">Go Documentation Server</a></div>
+<div class="top-heading" id="heading-narrow"><a href="../../index.html">GoDoc</a></div>
+<a href="index.html#" id="menu-button"><span id="menu-button-arrow">&#9661;</span></a>
+<form method="GET" action="http://localhost:6060/search">
+<div id="menu">
+
+<span class="search-box"><input type="search" id="search" name="q" placeholder="Search" aria-label="Search" required><button type="submit"><span><!-- magnifying glass: --><svg width="24" height="24" viewBox="0 0 24 24"><title>submit search</title><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg></span></button></span>
+</div>
+</form>
+
+</div></div>
+
+
+
+<div id="page" class="wide">
+<div class="container">
+
+
+  <h1>
+    Package OmniVision_pkg
+    <span class="text-muted"></span>
+  </h1>
+
+
+
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	<script>
+	document.ANALYSIS_DATA = null;
+	document.CALLGRAPH = null;
+	</script>
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "player/OmniVision_pkg"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="index.html#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="index.html#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+				<dd><a href="index.html#pkg-subdirectories">Subdirectories</a></dd>
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				<p>
+This package obtains the position of the robot itself and all the other elements on a robotic soccer field.
+</p>
+<p>
+The aim is to obtain the image from a catadioptric camera and the data from YOLO via gRPC,
+obtain the robot&#39;s current position and save the resulting data in the Local Database.
+</p>
+
+				
+			</div>
+		</div>
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+				<dd><a href="index.html#pkg-constants">Constants</a></dd>
+			
+			
+			
+				
+				<dd><a href="index.html#ArgMax">func ArgMax(v []int) int</a></dd>
+			
+				
+				<dd><a href="index.html#CM_to_Pixels">func CM_to_Pixels(x, y float64) (int, int)</a></dd>
+			
+				
+				<dd><a href="index.html#GetRealField">func GetRealField(image_field *gocv.Mat, readed_field *gocv.Mat)</a></dd>
+			
+				
+				<dd><a href="index.html#Pixels_to_MM">func Pixels_to_MM(x, y int) (int, int)</a></dd>
+			
+				
+				<dd><a href="index.html#Rotate">func Rotate(original gocv.Mat, rotated *gocv.Mat, angle int)</a></dd>
+			
+				
+				<dd><a href="index.html#Run">func Run(shirt bool, ip_grpc string, ID int)</a></dd>
+			
+			
+				
+				<dd><a href="index.html#Kalman">type Kalman</a></dd>
+				
+				
+			
+				
+				<dd><a href="index.html#OmniVision">type OmniVision</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#OmniVision.Clean_OutField">func (vision *OmniVision) Clean_OutField(readed_field *gocv.Mat, x int, y int)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#OmniVision.Close_Localize">func (vision *OmniVision) Close_Localize() (x float64, y float64, angle int)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#OmniVision.Global_Localize">func (vision *OmniVision) Global_Localize() (x, y, angle int)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#OmniVision.Init">func (vision *OmniVision) Init()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#OmniVision.Init_Kalman">func (vision *OmniVision) Init_Kalman(x, y float64)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#OmniVision.Object_in">func (vision *OmniVision) Object_in(dist int, angle int) bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#OmniVision.Reset_Kalman">func (vision *OmniVision) Reset_Kalman()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#OmniVision.SaveOmniData">func (vision *OmniVision) SaveOmniData(resp *pb.Response_Omni)</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="index.html#OmniVision.Update_Kalman">func (vision *OmniVision) Update_Kalman() (float64, float64)</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h3>Package files</h3>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/player/OmniVision_pkg/AuxFuncs.go">AuxFuncs.go</a>
+			
+				<a href="http://localhost:6060/src/player/OmniVision_pkg/CleanOutSide.go">CleanOutSide.go</a>
+			
+				<a href="http://localhost:6060/src/player/OmniVision_pkg/GetRealField.go">GetRealField.go</a>
+			
+				<a href="http://localhost:6060/src/player/OmniVision_pkg/InsideField.go">InsideField.go</a>
+			
+				<a href="http://localhost:6060/src/player/OmniVision_pkg/Kalman.go">Kalman.go</a>
+			
+				<a href="http://localhost:6060/src/player/OmniVision_pkg/Localize.go">Localize.go</a>
+			
+				<a href="http://localhost:6060/src/player/OmniVision_pkg/Record.go">Record.go</a>
+			
+				<a href="http://localhost:6060/src/player/OmniVision_pkg/Rotation.go">Rotation.go</a>
+			
+				<a href="http://localhost:6060/src/player/OmniVision_pkg/Savedata.go">Savedata.go</a>
+			
+				<a href="http://localhost:6060/src/player/OmniVision_pkg/config_field_consts.go">config_field_consts.go</a>
+			
+				<a href="http://localhost:6060/src/player/OmniVision_pkg/config_front_consts.go">config_front_consts.go</a>
+			
+				<a href="http://localhost:6060/src/player/OmniVision_pkg/config_omni_consts.go">config_omni_consts.go</a>
+			
+				<a href="http://localhost:6060/src/player/OmniVision_pkg/config_omni_tables.go">config_omni_tables.go</a>
+			
+				<a href="http://localhost:6060/src/player/OmniVision_pkg/config_omni_tables_ball.go">config_omni_tables_ball.go</a>
+			
+				<a href="http://localhost:6060/src/player/OmniVision_pkg/omnivision.go">omnivision.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+
+		
+			<h2 id="pkg-constants">Constants</h2>
+			
+				
+				<pre>const <span id="A">A</span> = 1800</pre>
+			
+				
+				<pre>const <span id="B">B</span> = 1200</pre>
+			
+				
+				<pre>const <span id="C">C</span> = 650</pre>
+			
+				
+				<pre>const <span id="D">D</span> = 350</pre>
+			
+				
+				<pre>const <span id="E">E</span> = 225</pre>
+			
+				
+				<pre>const <span id="EXPOSURE_omni">EXPOSURE_omni</span> = 67131</pre>
+			
+				
+				<pre>const <span id="F">F</span> = 75</pre>
+			
+				
+				<pre>const <span id="G">G</span> = 75</pre>
+			
+				
+				<pre>const <span id="GAIN_omni">GAIN_omni</span> = 32</pre>
+			
+				
+				<pre>const <span id="H">H</span> = 400</pre>
+			
+				
+				<pre>const <span id="I">I</span> = 300</pre>
+			
+				
+				<pre>const <span id="J">J</span> = 15</pre>
+			
+				
+				<pre>const <span id="K">K</span> = 12</pre>
+			
+				
+				<pre>const <span id="L">L</span> = 100</pre>
+			
+				
+				<pre>const <span id="M">M</span> = 100</pre>
+			
+				
+				<pre>const <span id="MAX_AREA_ball_omni">MAX_AREA_ball_omni</span> = 1349</pre>
+			
+				
+				<pre>const <span id="MAX_H_ball_front">MAX_H_ball_front</span> = 0</pre>
+			
+				
+				<pre>const <span id="MAX_H_ball_omni">MAX_H_ball_omni</span> = 40</pre>
+			
+				
+				<pre>const <span id="MAX_H_blueshirt_front">MAX_H_blueshirt_front</span> = 0</pre>
+			
+				
+				<pre>const <span id="MAX_H_blueshirt_omni">MAX_H_blueshirt_omni</span> = 111</pre>
+			
+				
+				<pre>const <span id="MAX_H_field_front">MAX_H_field_front</span> = 0</pre>
+			
+				
+				<pre>const <span id="MAX_H_field_omni">MAX_H_field_omni</span> = 255</pre>
+			
+				
+				<pre>const <span id="MAX_H_lines_front">MAX_H_lines_front</span> = 0</pre>
+			
+				
+				<pre>const <span id="MAX_H_lines_omni">MAX_H_lines_omni</span> = 255</pre>
+			
+				
+				<pre>const <span id="MAX_H_redshirt_front">MAX_H_redshirt_front</span> = 0</pre>
+			
+				
+				<pre>const <span id="MAX_H_redshirt_omni">MAX_H_redshirt_omni</span> = 170</pre>
+			
+				
+				<pre>const <span id="MAX_H_robot_front">MAX_H_robot_front</span> = 0</pre>
+			
+				
+				<pre>const <span id="MAX_H_robot_omni">MAX_H_robot_omni</span> = 255</pre>
+			
+				
+				<pre>const <span id="MAX_LINE_WIDTH">MAX_LINE_WIDTH</span> = 60</pre>
+			
+				
+				<pre>const <span id="MAX_S_ball_front">MAX_S_ball_front</span> = 0</pre>
+			
+				
+				<pre>const <span id="MAX_S_ball_omni">MAX_S_ball_omni</span> = 255</pre>
+			
+				
+				<pre>const <span id="MAX_S_blueshirt_front">MAX_S_blueshirt_front</span> = 0</pre>
+			
+				
+				<pre>const <span id="MAX_S_blueshirt_omni">MAX_S_blueshirt_omni</span> = 255</pre>
+			
+				
+				<pre>const <span id="MAX_S_field_front">MAX_S_field_front</span> = 0</pre>
+			
+				
+				<pre>const <span id="MAX_S_field_omni">MAX_S_field_omni</span> = 106</pre>
+			
+				
+				<pre>const <span id="MAX_S_lines_front">MAX_S_lines_front</span> = 0</pre>
+			
+				
+				<pre>const <span id="MAX_S_lines_omni">MAX_S_lines_omni</span> = 173</pre>
+			
+				
+				<pre>const <span id="MAX_S_redshirt_front">MAX_S_redshirt_front</span> = 0</pre>
+			
+				
+				<pre>const <span id="MAX_S_redshirt_omni">MAX_S_redshirt_omni</span> = 255</pre>
+			
+				
+				<pre>const <span id="MAX_S_robot_front">MAX_S_robot_front</span> = 0</pre>
+			
+				
+				<pre>const <span id="MAX_S_robot_omni">MAX_S_robot_omni</span> = 255</pre>
+			
+				
+				<pre>const <span id="MAX_V_ball_front">MAX_V_ball_front</span> = 0</pre>
+			
+				
+				<pre>const <span id="MAX_V_ball_omni">MAX_V_ball_omni</span> = 255</pre>
+			
+				
+				<pre>const <span id="MAX_V_blueshirt_front">MAX_V_blueshirt_front</span> = 0</pre>
+			
+				
+				<pre>const <span id="MAX_V_blueshirt_omni">MAX_V_blueshirt_omni</span> = 255</pre>
+			
+				
+				<pre>const <span id="MAX_V_field_front">MAX_V_field_front</span> = 63</pre>
+			
+				
+				<pre>const <span id="MAX_V_field_omni">MAX_V_field_omni</span> = 255</pre>
+			
+				
+				<pre>const <span id="MAX_V_lines_front">MAX_V_lines_front</span> = 0</pre>
+			
+				
+				<pre>const <span id="MAX_V_lines_omni">MAX_V_lines_omni</span> = 255</pre>
+			
+				
+				<pre>const <span id="MAX_V_redshirt_front">MAX_V_redshirt_front</span> = 0</pre>
+			
+				
+				<pre>const <span id="MAX_V_redshirt_omni">MAX_V_redshirt_omni</span> = 98</pre>
+			
+				
+				<pre>const <span id="MAX_V_robot_front">MAX_V_robot_front</span> = 0</pre>
+			
+				
+				<pre>const <span id="MAX_V_robot_omni">MAX_V_robot_omni</span> = 36</pre>
+			
+				
+				<pre>const <span id="MIN_AREA_ball_omni">MIN_AREA_ball_omni</span> = 56</pre>
+			
+				
+				<pre>const <span id="MIN_H_ball_front">MIN_H_ball_front</span> = 0</pre>
+			
+				
+				<pre>const <span id="MIN_H_ball_omni">MIN_H_ball_omni</span> = 26</pre>
+			
+				
+				<pre>const <span id="MIN_H_blueshirt_front">MIN_H_blueshirt_front</span> = 255</pre>
+			
+				
+				<pre>const <span id="MIN_H_blueshirt_omni">MIN_H_blueshirt_omni</span> = 98</pre>
+			
+				
+				<pre>const <span id="MIN_H_field_front">MIN_H_field_front</span> = 255</pre>
+			
+				
+				<pre>const <span id="MIN_H_field_omni">MIN_H_field_omni</span> = 0</pre>
+			
+				
+				<pre>const <span id="MIN_H_lines_front">MIN_H_lines_front</span> = 255</pre>
+			
+				
+				<pre>const <span id="MIN_H_lines_omni">MIN_H_lines_omni</span> = 0</pre>
+			
+				
+				<pre>const <span id="MIN_H_redshirt_front">MIN_H_redshirt_front</span> = 255</pre>
+			
+				
+				<pre>const <span id="MIN_H_redshirt_omni">MIN_H_redshirt_omni</span> = 122</pre>
+			
+				
+				<pre>const <span id="MIN_H_robot_front">MIN_H_robot_front</span> = 255</pre>
+			
+				
+				<pre>const <span id="MIN_H_robot_omni">MIN_H_robot_omni</span> = 0</pre>
+			
+				
+				<pre>const <span id="MIN_LINE_WIDTH">MIN_LINE_WIDTH</span> = 1</pre>
+			
+				
+				<pre>const <span id="MIN_S_ball_front">MIN_S_ball_front</span> = 0</pre>
+			
+				
+				<pre>const <span id="MIN_S_ball_omni">MIN_S_ball_omni</span> = 120</pre>
+			
+				
+				<pre>const <span id="MIN_S_blueshirt_front">MIN_S_blueshirt_front</span> = 255</pre>
+			
+				
+				<pre>const <span id="MIN_S_blueshirt_omni">MIN_S_blueshirt_omni</span> = 151</pre>
+			
+				
+				<pre>const <span id="MIN_S_field_front">MIN_S_field_front</span> = 255</pre>
+			
+				
+				<pre>const <span id="MIN_S_field_omni">MIN_S_field_omni</span> = 0</pre>
+			
+				
+				<pre>const <span id="MIN_S_lines_front">MIN_S_lines_front</span> = 255</pre>
+			
+				
+				<pre>const <span id="MIN_S_lines_omni">MIN_S_lines_omni</span> = 0</pre>
+			
+				
+				<pre>const <span id="MIN_S_redshirt_front">MIN_S_redshirt_front</span> = 255</pre>
+			
+				
+				<pre>const <span id="MIN_S_redshirt_omni">MIN_S_redshirt_omni</span> = 24</pre>
+			
+				
+				<pre>const <span id="MIN_S_robot_front">MIN_S_robot_front</span> = 255</pre>
+			
+				
+				<pre>const <span id="MIN_S_robot_omni">MIN_S_robot_omni</span> = 0</pre>
+			
+				
+				<pre>const <span id="MIN_V_ball_front">MIN_V_ball_front</span> = 255</pre>
+			
+				
+				<pre>const <span id="MIN_V_ball_omni">MIN_V_ball_omni</span> = 118</pre>
+			
+				
+				<pre>const <span id="MIN_V_blueshirt_front">MIN_V_blueshirt_front</span> = 255</pre>
+			
+				
+				<pre>const <span id="MIN_V_blueshirt_omni">MIN_V_blueshirt_omni</span> = 71</pre>
+			
+				
+				<pre>const <span id="MIN_V_field_front">MIN_V_field_front</span> = 255</pre>
+			
+				
+				<pre>const <span id="MIN_V_field_omni">MIN_V_field_omni</span> = 186</pre>
+			
+				
+				<pre>const <span id="MIN_V_lines_front">MIN_V_lines_front</span> = 255</pre>
+			
+				
+				<pre>const <span id="MIN_V_lines_omni">MIN_V_lines_omni</span> = 79</pre>
+			
+				
+				<pre>const <span id="MIN_V_redshirt_front">MIN_V_redshirt_front</span> = 255</pre>
+			
+				
+				<pre>const <span id="MIN_V_redshirt_omni">MIN_V_redshirt_omni</span> = 0</pre>
+			
+				
+				<pre>const <span id="MIN_V_robot_front">MIN_V_robot_front</span> = 255</pre>
+			
+				
+				<pre>const <span id="MIN_V_robot_omni">MIN_V_robot_omni</span> = 0</pre>
+			
+				
+				<pre>const <span id="N">N</span> = 600</pre>
+			
+				
+				<pre>const <span id="O">O</span> = 100</pre>
+			
+				
+				<pre>const <span id="P">P</span> = 50</pre>
+			
+				<p>
+Constant to tranform Pixels in our Range X
+</p>
+
+				<pre>const <span id="PIXEL_RANGE_X">PIXEL_RANGE_X</span> <a href="../../builtin/index.html#float64">float64</a> = 1000 / ((<a href="index.html#A">A</a> / 2) / 10)</pre>
+			
+				<p>
+Constant to tranform Pixels in our Range Y
+</p>
+
+				<pre>const <span id="PIXEL_RANGE_Y">PIXEL_RANGE_Y</span> <a href="../../builtin/index.html#float64">float64</a> = 1000 / ((<a href="index.html#B">B</a> / 2) / 10)</pre>
+			
+				
+				<pre>const <span id="Q">Q</span> = 300</pre>
+			
+				
+				<pre>const <span id="SATURATION_omni">SATURATION_omni</span> = 790</pre>
+			
+				
+				<pre>const <span id="WARP_bl">WARP_bl</span> = 1</pre>
+			
+				
+				<pre>const <span id="WARP_br">WARP_br</span> = 479</pre>
+			
+		
+		
+		
+			
+			
+			<h2 id="ArgMax">func <a href="http://localhost:6060/src/player/OmniVision_pkg/AuxFuncs.go?s=1292:1316#L50">ArgMax</a>
+				<a class="permalink" href="index.html#ArgMax">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func ArgMax(v []<a href="../../builtin/index.html#int">int</a>) <a href="../../builtin/index.html#int">int</a></pre>
+			<p>
+The ArgMax function gets the index of the largest element in an array.
+</p>
+<p>
+Parameters:
+</p>
+<pre>- `v` : []int -&gt; Array
+</pre>
+<p>
+Returns:
+</p>
+<pre>- `max_index` : int -&gt; Index of max value
+</pre>
+
+			
+			
+
+		
+			
+			
+			<h2 id="CM_to_Pixels">func <a href="http://localhost:6060/src/player/OmniVision_pkg/AuxFuncs.go?s=1002:1044#L36">CM_to_Pixels</a>
+				<a class="permalink" href="index.html#CM_to_Pixels">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func CM_to_Pixels(x, y <a href="../../builtin/index.html#float64">float64</a>) (<a href="../../builtin/index.html#int">int</a>, <a href="../../builtin/index.html#int">int</a>)</pre>
+			<p>
+CM_to_Pixels tranform centimetres position in pixels position.
+In other words, the opposite of the Pixels_to_MM function.
+</p>
+<p>
+Parameters:
+</p>
+<pre>- `x` : float64 -&gt; X in cm
+- `y` : float64 -&gt; Y in cm
+</pre>
+<p>
+Returns:
+</p>
+<pre>- `x` : int -&gt; X in Pixels
+- `y` : int -&gt; Y in Pixels
+</pre>
+
+			
+			
+
+		
+			
+			
+			<h2 id="GetRealField">func <a href="http://localhost:6060/src/player/OmniVision_pkg/GetRealField.go?s=452:516#L8">GetRealField</a>
+				<a class="permalink" href="index.html#GetRealField">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func GetRealField(image_field *<a href="../../gocv.io/x/gocv/index.html">gocv</a>.<a href="../../gocv.io/x/gocv/index.html#Mat">Mat</a>, readed_field *<a href="../../gocv.io/x/gocv/index.html">gocv</a>.<a href="../../gocv.io/x/gocv/index.html#Mat">Mat</a>)</pre>
+			<p>
+GetRealField is a function that takes the filtred field and transform it in real field
+The resolution is 10cm for pixel
+Considering that robots can view 6 meter in each direction
+</p>
+<p>
+Parameters:
+</p>
+<pre>- `image_field` : gocv.Mat -&gt;  Binary Image of Field
+- `readed_field` : gocv.Mat -&gt; Matrix 120x120 to save real field
+</pre>
+
+			
+			
+
+		
+			
+			
+			<h2 id="Pixels_to_MM">func <a href="http://localhost:6060/src/player/OmniVision_pkg/AuxFuncs.go?s=606:644#L19">Pixels_to_MM</a>
+				<a class="permalink" href="index.html#Pixels_to_MM">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func Pixels_to_MM(x, y <a href="../../builtin/index.html#int">int</a>) (<a href="../../builtin/index.html#int">int</a>, <a href="../../builtin/index.html#int">int</a>)</pre>
+			<p>
+Pixels_to_MM transform pixels position in millimeters position.
+In other words, it transforms the position in the field image into distances in the real world
+</p>
+<p>
+Parameters:
+</p>
+<pre>- `x` : int -&gt; X in Pixels
+- `y` : int -&gt; Y in Pixels
+</pre>
+<p>
+Returns:
+</p>
+<pre>- `x` : int -&gt; X in mm
+- `y` : int -&gt; Y in mm
+</pre>
+
+			
+			
+
+		
+			
+			
+			<h2 id="Rotate">func <a href="http://localhost:6060/src/player/OmniVision_pkg/AuxFuncs.go?s=1709:1769#L70">Rotate</a>
+				<a class="permalink" href="index.html#Rotate">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func Rotate(original <a href="../../gocv.io/x/gocv/index.html">gocv</a>.<a href="../../gocv.io/x/gocv/index.html#Mat">Mat</a>, rotated *<a href="../../gocv.io/x/gocv/index.html">gocv</a>.<a href="../../gocv.io/x/gocv/index.html#Mat">Mat</a>, angle <a href="../../builtin/index.html#int">int</a>)</pre>
+			<p>
+Rotate is a function that rotates the image to a specific angle using nearest neighbour interpolation.
+</p>
+<p>
+Parameters:
+</p>
+<pre>- `original` : gocv.Mat -&gt; Matrix to rotate
+- `rotated` : *gocv.Mat -&gt; Rotated Matrix
+- `angle` : int -&gt; rotation angle
+</pre>
+
+			
+			
+
+		
+			
+			
+			<h2 id="Run">func <a href="http://localhost:6060/src/player/OmniVision_pkg/omnivision.go?s=3227:3271#L64">Run</a>
+				<a class="permalink" href="index.html#Run">&#xb6;</a>
+				
+				
+			</h2>
+			<pre>func Run(shirt <a href="../../builtin/index.html#bool">bool</a>, ip_grpc <a href="../../builtin/index.html#string">string</a>, ID <a href="../../builtin/index.html#int">int</a>)</pre>
+			<p>
+The Run function is responsible for starting all of OmniVision and is in a permanent cycle.
+In this permanent cycle, it must receive the image and data from YOLO,
+perform Close_Localization and save the resultant data in the Local Database.
+</p>
+<p>
+Parameters:
+</p>
+<pre>- `shirt` : bool -&gt;  Robot Shirt (blue=true red=false)
+- `ip_grpc` : string -&gt; gRPC IP
+- `ID` : int -&gt;  Robot Number (0 is GK - 1,2,3,4 are field players)
+</pre>
+
+			
+			
+
+		
+		
+			
+			
+			<h2 id="Kalman">type <a href="http://localhost:6060/src/player/OmniVision_pkg/Kalman.go?s=148:365#L1">Kalman</a>
+				<a class="permalink" href="index.html#Kalman">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+Contain all variables needed in Kalman filter.
+</p>
+
+			<pre>type Kalman struct {
+<span id="Kalman.X"></span>    X *<a href="../../gonum.org/v1/gonum/mat/index.html">mat</a>.<a href="../../gonum.org/v1/gonum/mat/index.html#VecDense">VecDense</a> <span class="comment">// State</span>
+<span id="Kalman.P"></span>    P *<a href="../../gonum.org/v1/gonum/mat/index.html">mat</a>.<a href="../../gonum.org/v1/gonum/mat/index.html#Dense">Dense</a>    <span class="comment">// Covariance</span>
+<span id="Kalman.K"></span>    K *<a href="../../gonum.org/v1/gonum/mat/index.html">mat</a>.<a href="../../gonum.org/v1/gonum/mat/index.html#Dense">Dense</a>    <span class="comment">// Gain</span>
+<span id="Kalman.Q"></span>    Q *<a href="../../gonum.org/v1/gonum/mat/index.html">mat</a>.<a href="../../gonum.org/v1/gonum/mat/index.html#Dense">Dense</a>    <span class="comment">// Process Noise Covariance</span>
+<span id="Kalman.R"></span>    R *<a href="../../gonum.org/v1/gonum/mat/index.html">mat</a>.<a href="../../gonum.org/v1/gonum/mat/index.html#Dense">Dense</a>    <span class="comment">// Measurement Covariance</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="OmniVision">type <a href="http://localhost:6060/src/player/OmniVision_pkg/omnivision.go?s=642:1882#L11">OmniVision</a>
+				<a class="permalink" href="index.html#OmniVision">&#xb6;</a>
+				
+				
+			</h2>
+			<p>
+OmniVision Struct contains all the data needed by OmniVision&#39;s software, eliminating the need to create new variables every cycle.
+</p>
+
+			<pre>type OmniVision struct {
+<span id="OmniVision.ID"></span>    ID <a href="../../builtin/index.html#int">int</a> <span class="comment">// Robot ID</span>
+    <span class="comment">// contains filtered or unexported fields</span>
+}
+</pre>
+
+			
+
+			
+
+			
+			
+			
+
+			
+
+			
+				
+				<h3 id="OmniVision.Clean_OutField">func (*OmniVision) <a href="http://localhost:6060/src/player/OmniVision_pkg/CleanOutSide.go?s=605:682#L10">Clean_OutField</a>
+					<a class="permalink" href="index.html#OmniVision.Clean_OutField">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (vision *<a href="index.html#OmniVision">OmniVision</a>) Clean_OutField(readed_field *<a href="../../gocv.io/x/gocv/index.html">gocv</a>.<a href="../../gocv.io/x/gocv/index.html#Mat">Mat</a>, x <a href="../../builtin/index.html#int">int</a>, y <a href="../../builtin/index.html#int">int</a>)</pre>
+				
+				
+				
+				
+			
+				
+				<h3 id="OmniVision.Close_Localize">func (*OmniVision) <a href="http://localhost:6060/src/player/OmniVision_pkg/Localize.go?s=1814:1890#L47">Close_Localize</a>
+					<a class="permalink" href="index.html#OmniVision.Close_Localize">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (vision *<a href="index.html#OmniVision">OmniVision</a>) Close_Localize() (x <a href="../../builtin/index.html#float64">float64</a>, y <a href="../../builtin/index.html#float64">float64</a>, angle <a href="../../builtin/index.html#int">int</a>)</pre>
+				<p>
+The Close_Localize function obtains the robot&#39;s position and angle based on the previous position,
+i.e. it only has a radius of 1 metre (10 pixels) to move from the last position.
+</p>
+<pre>It is a method of the OmniVision struct.
+</pre>
+<p>
+Returns:
+</p>
+<pre>- `x` : int -&gt;  Robot X Position in centimetres
+- `y` : int -&gt;  Robot Y Position in centimetres
+- `angle` : int -&gt;  Robot angle
+</pre>
+
+				
+				
+				
+			
+				
+				<h3 id="OmniVision.Global_Localize">func (*OmniVision) <a href="http://localhost:6060/src/player/OmniVision_pkg/Localize.go?s=402:463#L9">Global_Localize</a>
+					<a class="permalink" href="index.html#OmniVision.Global_Localize">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (vision *<a href="index.html#OmniVision">OmniVision</a>) Global_Localize() (x, y, angle <a href="../../builtin/index.html#int">int</a>)</pre>
+				<p>
+The Global_Localise function obtains the robot&#39;s position and angle based on the entire field.
+</p>
+<pre>It is a method of the OmniVision struct.
+</pre>
+<p>
+Returns:
+</p>
+<pre>- `x` : int -&gt;  Robot X Position in centimetres
+- `y` : int -&gt;  Robot Y Position in centimetres
+- `angle` : int -&gt;  Robot angle
+</pre>
+
+				
+				
+				
+			
+				
+				<h3 id="OmniVision.Init">func (*OmniVision) <a href="http://localhost:6060/src/player/OmniVision_pkg/omnivision.go?s=1982:2014#L39">Init</a>
+					<a class="permalink" href="index.html#OmniVision.Init">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (vision *<a href="index.html#OmniVision">OmniVision</a>) Init()</pre>
+				<p>
+This function init all variables of OmniVision.
+It is a method of the OmniVision struct.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="OmniVision.Init_Kalman">func (*OmniVision) <a href="http://localhost:6060/src/player/OmniVision_pkg/Kalman.go?s=600:651#L15">Init_Kalman</a>
+					<a class="permalink" href="index.html#OmniVision.Init_Kalman">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (vision *<a href="index.html#OmniVision">OmniVision</a>) Init_Kalman(x, y <a href="../../builtin/index.html#float64">float64</a>)</pre>
+				<p>
+Init_Kalman is a function that init all variables of Kalman filter.
+It is a method of the OmniVision struct.
+</p>
+<p>
+Parameters:
+</p>
+<pre>- `x` : float64 -&gt;  Initial position in X
+- `y` : float64 -&gt;  Initial position in Y
+</pre>
+
+				
+				
+				
+			
+				
+				<h3 id="OmniVision.Object_in">func (*OmniVision) <a href="http://localhost:6060/src/player/OmniVision_pkg/Savedata.go?s=350:411#L11">Object_in</a>
+					<a class="permalink" href="index.html#OmniVision.Object_in">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (vision *<a href="index.html#OmniVision">OmniVision</a>) Object_in(dist <a href="../../builtin/index.html#int">int</a>, angle <a href="../../builtin/index.html#int">int</a>) <a href="../../builtin/index.html#bool">bool</a></pre>
+				<p>
+Object_in to know if the object is inside of the field or not.
+It is a method of the OmniVision struct.
+</p>
+<p>
+Parameters:
+</p>
+<pre>- `dist` : float64 -&gt; Distance to object
+- `angle` : float64 -&gt; Angle
+</pre>
+<p>
+Returns:
+</p>
+<pre>- `In` : bool -&gt; In/Out
+</pre>
+
+				
+				
+				
+			
+				
+				<h3 id="OmniVision.Reset_Kalman">func (*OmniVision) <a href="http://localhost:6060/src/player/OmniVision_pkg/Kalman.go?s=1206:1246#L47">Reset_Kalman</a>
+					<a class="permalink" href="index.html#OmniVision.Reset_Kalman">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (vision *<a href="index.html#OmniVision">OmniVision</a>) Reset_Kalman()</pre>
+				<p>
+Reset_Kalman is a function that reset the position of Kalman filter.
+It is a method of the OmniVision struct.
+</p>
+
+				
+				
+				
+			
+				
+				<h3 id="OmniVision.SaveOmniData">func (*OmniVision) <a href="http://localhost:6060/src/player/OmniVision_pkg/Savedata.go?s=1022:1084#L34">SaveOmniData</a>
+					<a class="permalink" href="index.html#OmniVision.SaveOmniData">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (vision *<a href="index.html#OmniVision">OmniVision</a>) SaveOmniData(resp *<a href="../pb/index.html">pb</a>.<a href="../pb/index.html#Response_Omni">Response_Omni</a>)</pre>
+				<p>
+SaveOmniData is a function that save all the object in Local Database.
+It is a method of the OmniVision struct.
+</p>
+<p>
+Parameters:
+</p>
+<pre>- `resp` : *Response_Omni -&gt; YOLO Data (via gRPC)
+</pre>
+
+				
+				
+				
+			
+				
+				<h3 id="OmniVision.Update_Kalman">func (*OmniVision) <a href="http://localhost:6060/src/player/OmniVision_pkg/Kalman.go?s=1583:1643#L61">Update_Kalman</a>
+					<a class="permalink" href="index.html#OmniVision.Update_Kalman">&#xb6;</a>
+					
+					
+				</h3>
+				<pre>func (vision *<a href="index.html#OmniVision">OmniVision</a>) Update_Kalman() (<a href="../../builtin/index.html#float64">float64</a>, <a href="../../builtin/index.html#float64">float64</a>)</pre>
+				<p>
+Update_Kalman is a function that update Kalman filter using Computer Vision and Encoders values.
+It is a method of the OmniVision struct.
+</p>
+<p>
+Returns:
+</p>
+<pre>- `x` : float64 -&gt;  Final position in X
+- `y` : float64 -&gt;  Final position in Y
+</pre>
+
+				
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+	
+	
+		<h2 id="pkg-subdirectories">Subdirectories</h2>
+	
+	<div class="pkg-dir">
+		<table>
+			<tr>
+				<th class="pkg-name">Name</th>
+				<th class="pkg-synopsis">Synopsis</th>
+			</tr>
+
+			
+			<tr>
+				<td colspan="2"><a href="../../player.html">..</a></td>
+			</tr>
+			
+
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 0px;">
+						<a href="Calibration/index.html">Calibration</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						
+					</td>
+				</tr>
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 20px;">
+						<a href="Calibration/aux_file/index.html">aux_file</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						
+					</td>
+				</tr>
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 40px;">
+						<a href="Calibration/aux_file/player/index.html">player</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						
+					</td>
+				</tr>
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 60px;">
+						<a href="Calibration/aux_file/player/LocalDB/index.html">LocalDB</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						
+					</td>
+				</tr>
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 60px;">
+						<a href="Calibration/aux_file/player/communication/index.html">communication</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						
+					</td>
+				</tr>
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 60px;">
+						<a href="Calibration/aux_file/player/freenect/index.html">freenect</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						
+					</td>
+				</tr>
+			
+				<tr>
+				
+					<td class="pkg-name" style="padding-left: 60px;">
+						<a href="Calibration/aux_file/player/skills/index.html">skills</a>
+					</td>
+				
+					<td class="pkg-synopsis">
+						
+					</td>
+				</tr>
+			
+		</table>
+	</div>
+
+
+
+<div id="footer">
+Build version go1.18.1.<br>
+Except as <a href="https://developers.google.com/site-policies#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="https://golang.org/doc/tos.html">Terms of Service</a> |
+<a href="https://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+</body>
+</html>
