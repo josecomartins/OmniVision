@@ -1,5 +1,6 @@
 ![LAR](https://github.com/MSL-LAR-MinhoTeam/2TDP/blob/main/Images/git_msl_lar%40msl.png)
-# LAR@MSL
+# LAR@MSL (OmniVision)
+This repository focuses on OmniVision and the work done by José Martins
 
 ## Links
  - [Website] <https://lar.dei.uminho.pt/>
@@ -15,6 +16,9 @@
 # Hardware
 ![Robot](https://github.com/josecomartins/OmniVision/blob/main/Hardware.png)
 Here are available the 3D CAD files from the robot, which is made by either aluminium or plastic PLA. There are still hardware being developed and some of them are from previous team generations, but the ones made this year are available here.
+
+# Software
+![Robot](https://github.com/josecomartins/OmniVision/blob/main/Software.png)
 
 # Player
 This is the main robot code that runs on the robot's main computer. It also has the ESP32 code that runs on the Robot Microcontroller.
