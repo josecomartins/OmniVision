@@ -26,8 +26,8 @@ Library to adquire images from Kinect.
 ## Skills
 Use kinect camera as primary data source and performe all individual skills.
 
-## GoalKeeper Vision
-GoalKeeper Vision will be responsible for the prediction of the ball trajectory and the response of the GoalKeeper to defend the goal.
+## GoalKeeper
+GoalKeeper will be responsible for the prediction of the ball trajectory and obtaind Goalkeeper position using a LIDAR.
 
 
 # Run
