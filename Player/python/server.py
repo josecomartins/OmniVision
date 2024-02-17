@@ -37,7 +37,7 @@ def open_frame_source():
         return
     except:
         print("Can't Open Omni Camera... Verify Connection")
-        omnicap = cv2.VideoCapture("/home/robot3/Desktop/Tese SLender/Resultados SASUM/3/MyVideo.avi")
+        omnicap = cv2.VideoCapture("MyVideo.avi")
         omnicap.set(cv.CAP_PROP_FPS,300)
 
 last_frame = np.zeros((480,480,1), dtype=np.uint8)
