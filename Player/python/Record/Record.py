@@ -1,7 +1,5 @@
 import logging
 from concurrent.futures import ThreadPoolExecutor
-
-import grpc
 import numpy as np
 import PySpin
 import EasyPySpin
@@ -14,8 +12,6 @@ import time
 import os
 import time
 import glob
-# Load model
-model = YOLO("trained_weights/omni400.pt") 
 VERSAO="15v"
 # Define the coordinates to find the closest point to
 target = np.array([240, 240])
@@ -42,7 +38,6 @@ def open_frame_source():
         try:
             omnicap = EasyPySpin.VideoCapture(0)
             omnicap.cam.PixelFormat.SetValue(PySpin.PixelFormat_RGB8Packed)
-            omnicap.set(cv.CAP_PROP_FPS,30)
             return
         except:
             print("Can't Open Omni Camera... Verify Connection")
@@ -54,7 +49,6 @@ actual_frame_omni = np.zeros((480,480,3), dtype=np.uint8)
 def get_omni_frame(frame_bckup=1):
     global actual_frame_omni
     global omnicap
-    global model
     global distances
     ret,image_test=omnicap.read()
     if(ret):
