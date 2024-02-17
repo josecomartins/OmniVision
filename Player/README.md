@@ -1,24 +1,25 @@
-![LAR](https://github.com/MSL-LAR-MinhoTeam/2TDP/blob/main/Images/git_msl_omnivision_pkg.png)
-# OmniVision_pkg
+![LAR](https://github.com/MSL-LAR-MinhoTeam/2TDP/blob/main/Images/git_msl_player.png)
+# LAR@MSL Player Code
 
-## Self-localization
-The self-localization is made through template match.
-We develop tow types of localization "Global" that search the position in all field and "Close" that search just in near area.
+## Why Golang?
+Main reasons:
+- Fast;
+- Easy to learn;
+- Simple thread system.
 
-## Object Detection
-This algorithm will be able to detect all elements in the field: goal posts, ball, robots, humans.
-⚠️Until now we just develop a simple threshold method, to other member of the team can develope Skill and Strategy.
-We are integrating Instance Segmentation using YOLOv8 in our code. Results soon...
+## Communication
+Communication is used like a local database. Communicates with ESP32 (low level) and BaseStation (high level).
 
+## OmniVision_pkg
+Use only the omnidirectional camera to self-localization and objects detection.
+⚠️ Object detection only with basic functions, replacing with YOLOv8.
 
-====Run Calibration ====
-make calib
+## Freenect
+Library to adquire images from Kinect.
 
-=====Run Server ==== Just once, if server dont interrupted.
-make server
+## Skills
+Use kinect camera as primary data source and performe all individual skills.
 
-====Run Go ====
-make debug
+## GoalKeeper Vision
+GoalKeeper Vision will be responsible for the prediction of the ball trajectory and the response of the GoalKeeper to defend the goal.
 
-====Run All ====
-make start
