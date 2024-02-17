@@ -1,27 +1,28 @@
 import os
 HOME = os.getcwd()
 print(HOME)
+import ultralytics
+ultralytics.checks()
+from ultralytics import YOLO
+from IPython.display import display, Image
 
+## Download Dataset
+from roboflow import Roboflow
+rf = Roboflow(api_key="vwFRi233QozkicYHpFpz")
+project = rf.workspace("omnidatasetsegmentation").project("msl-omnidirecional-lar-uminho")
+dataset = project.version(14).download("yolov8")
 
 from IPython import display
 display.clear_output()
-
-import ultralytics
-ultralytics.checks()
-
-from ultralytics import YOLO
-
-from IPython.display import display, Image
-
-from roboflow import Roboflow
-rf = Roboflow(api_key="[YOUR-KEY]")
-project = rf.workspace("[YOUR-WORKSPACE]").project("[YOUR-PROJECT]")
-dataset = project.version(1).download("yolov8")
-
 import torch
 torch.cuda.empty_cache()
+
+## Model
 model = YOLO("yolov8s-seg.pt")
-model.train(model="yolov8s-seg.pt",task="segment",data="/home/martins/Desktop/Redes/datasets/MSL-Omnidirecional-LAR-UMinho-1/data.yaml", epochs=5,imgsz=480,plots=True)
+## Train
+# On console: yolo task=segment mode=train model=yolov8s-seg.pt data=./MSL-Omnidirecional-LAR-UMinho-14/data.yaml epochs=1000 imgsz=480 plots=True
+model.train(model="yolov8s-seg.pt",task="segment",data=HOME+"/MSL-Omnidirecional-LAR-UMinho-14/data.yaml", epochs=1000,imgsz=480,plots=True)
+## Deploy
+project.version(dataset.version).deploy(model_type="yolov8", model_path=f"/home/robot3/Desktop/Tese SLender/Testes_dataset/MSL Omnidirecional LAR UMinho.v14i.yolov8/runs1/segment/train")
 
 
-# On console: yolo task=segment mode=train model=yolov8s-seg.pt data=/content/datasets/MSL-Omnidirecional-LAR-UMinho-1/data.yaml epochs=200 imgsz=480 plots=True
