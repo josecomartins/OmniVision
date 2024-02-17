@@ -5,7 +5,7 @@
 Adjust the camera and lens position
 ## HSV Calibration
 Adjust thresholds 
-## Ball Calibration
+## Ball Calibration (not used)
 Calibrates ball coordenates
 ## Lines Calibration
 Calibrates lines coordenates
