@@ -13,6 +13,13 @@ Google Colab example: [Follow Link](https://colab.research.google.com/gist/josec
 ## YOLO Official Documentation:
 To see documentation: [Follow Link](https://docs.ultralytics.com/)
 
+## Train:
+Download the dataset, train the model and deploy to Roboflow 
+> $ python train.py
+
+## Detect:
+Test model
+> $ python detect.py
 
 ## Examples:
 ![Example1](https://github.com/josecomartins/OmniVision/blob/main/Yolo/example2.jpg)
