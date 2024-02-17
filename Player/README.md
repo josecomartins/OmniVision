@@ -40,6 +40,10 @@ Open the Calibration Tool.
 Generate the code to Python and Golang can use gRPC.
 > $ make gen_grpc
 
+## Record 
+Record cameras data.
+> $ make record
+
 ## Run Server 
 Open Python gRPC server.
 > $ make server
