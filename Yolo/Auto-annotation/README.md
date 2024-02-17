@@ -8,16 +8,4 @@
 ## 4- Paste the file "_darknet.labels" in "ToDo" folder. This file contains the name of classes. Dont change the order of the classes in this file.
 ## 5- The images need adjusts, upload them to RoboFlow and use the tools to correct the erros on labels and the segmentation.
 
-
-
-## Official Documentation:
-To see documentation: [Follow Link](https://docs.ultralytics.com/)
-
-## ⚠️ Dataset in development.
-
-
-## Example:
-![Example](https://github.com/MSL-LAR-MinhoTeam/2TDP/blob/main/Yolo/example.jpg)
-
-# Made by José Martins (Slender)
-# Edited by 
+# Made by José Martins
