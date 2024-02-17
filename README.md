@@ -13,7 +13,7 @@
 ![Robot](https://github.com/MSL-LAR-MinhoTeam/2TDP/blob/main/Images/photo_2023-02-28_14-06-29.jpg)
 
 # Hardware
-![Robot](https://github.com/josecomartins/OmniVision/blob/main/Hardware.pdf)
+![Robot](https://github.com/josecomartins/OmniVision/blob/main/Hardware.png)
 Here are available the 3D CAD files from the robot, which is made by either aluminium or plastic PLA. There are still hardware being developed and some of them are from previous team generations, but the ones made this year are available here.
 
 # Player
