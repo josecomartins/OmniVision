@@ -13,4 +13,4 @@ We are integrating Instance Segmentation using YOLOv8 in our code. Results soon.
 
 
 
-[GitHub Pages](https://htmlpreview.github.io/?https://github.com/josecomartins/OmniVision/blob/main/OmniVisionDoc/pkg/player/OmniVision_pkg/index.html#/bored)
+[OmniVision Documentation](https://htmlpreview.github.io/?https://github.com/josecomartins/OmniVision/blob/main/OmniVisionDoc/pkg/player/OmniVision_pkg/index.html#/bored)
