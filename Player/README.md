@@ -9,6 +9,7 @@ Main reasons:
 
 # OmniVision_pkg
 Use only the omnidirectional camera to self-localization and objects detection. 
+[OmniVision Documentation](https://htmlpreview.github.io/?https://github.com/josecomartins/OmniVision/blob/main/Player/OmniVision_pkg/OmniVisionDoc/pkg/player/OmniVision_pkg/index.html#/bored)
 
 # python
 Python gRPC server. Capture the image and streams to Golang the image and the YOLO data.
