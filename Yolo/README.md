@@ -14,7 +14,7 @@ Google Colab example: [Follow Link](https://colab.research.google.com/gist/josec
 To see documentation: [Follow Link](https://docs.ultralytics.com/)
 
 
-## Example:
+## Examples:
 ![Example1](https://github.com/josecomartins/OmniVision/blob/main/Yolo/example2.jpg)
 ![Example2](https://github.com/josecomartins/OmniVision/blob/main/Yolo/example3.jpg)
 ![Example3](https://github.com/josecomartins/OmniVision/blob/main/Yolo/example4.jpg)
