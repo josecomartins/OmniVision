@@ -33,6 +33,7 @@ GoalKeeper will be responsible for the prediction of the ball trajectory and obt
 
 # Run
 ## Run Calibration
+Open the Calibration Tool.
 > $ make calib
 
 ## gRPC Generate 
@@ -40,11 +41,13 @@ Generate the code to Python and Golang can use gRPC.
 > $ make gen_grpc
 
 ## Run Server 
-Just once, if server dont interrupted.
+Open Python gRPC server.
 > $ make server
 
 ## Run Go
+Compile and start Golang.
 > $ make debug
 
 ## Run All
+Start the server and Golang.
 > $ make start
