@@ -8,7 +8,7 @@ Dataset: [Follow Link](https://universe.roboflow.com/omnidatasetsegmentation/msl
 ## YOLOv8 Instance Segmentation:
 Google Colab example: [Follow Link](https://colab.research.google.com/gist/josecomartins/8091faa58b21a951b12658f64687b8e6/msl_yolov8.ipynb)
 
-## Official Documentation:
+## YOLO Official Documentation:
 To see documentation: [Follow Link](https://docs.ultralytics.com/)
 
 ## ⚠️ Dataset in development.
